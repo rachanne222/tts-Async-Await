@@ -12,9 +12,14 @@ function getRandomNumber(){
         })
     }
 
+//Using Promise without async/await
+
 // getRandomNumber()
 //     .then(num=> console.log(num ))
 //     .catch(err=> console.log(err))
+
+
+//Return random number using async/await
 
  async function printRandom(){
     let num= await getRandomNumber();
@@ -23,6 +28,7 @@ function getRandomNumber(){
  }
 
  printRandom()
+
 
 
  async function getLogLat(name){
